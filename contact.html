@@ -1,0 +1,131 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="icon" href="/phone icon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        label{
+            font-size:1.5rem;
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+        ::placeholder{
+            text-transform: uppercase;
+            font-weight: 700;
+            color: darkorange
+        }
+        .back{
+            top: 3.5rem;
+        }
+        .form-trol .error{
+            color: red;
+            text-transform: uppercase;
+            font-family: "Hanuman", serif;
+        }
+        .form-trol.error input{border: 2px solid red;}
+        .form-trol .success{
+            color: green;
+            text-transform: uppercase;
+            font-family: "Hanuman", serif;
+        }
+        .form-trol.success input{
+            border: 2px solid green;
+        }
+    </style>
+</head>
+<body>
+    <div class=" container bg-dark mt-5 m-auto rounded rounded-5 p-5">
+        <a href="index.html"><button class=" back text-uppercase fw-bold btn btn-primary position-absolute ">back</button></a>
+        <form>
+            <h1 class=" text-uppercase fw-bolder text-center text-light text-decoration-underline">contect us for more information</h1>
+            <div class=" form-trol">
+                <label for="username">name:</label>
+                <input type="text" name="username" id="username" placeholder="please input name" class=" form-control">
+                <span class=" error"></span>
+                <span class=" success"></span>
+            </div>
+            <div class=" form-trol">
+                <label for="userphone">phone number:</label>
+                <input type="text" name="userphone" id="userphone" placeholder="please input name" class=" form-control">
+                <span class=" error"></span>
+                <span class=" success"></span>
+            </div>
+            <div class=" form-trol">
+                <label for="useraddress">address:</label>
+                <input type="text" name="useraddress" id="useraddress" placeholder="please input address" class=" form-control">
+                <span class=" error"></span>
+                <span class=" success"></span>
+            </div>
+            <div class=" form-trol">
+                <label for="usercomment">comment:</label>
+                <input type="text" name="usercomment" id="usercomment" placeholder="please input comment" class=" form-control h-25 text-center">
+                <span class=" error"></span>
+                <span class=" success"></span>
+            </div>
+            <button type="submit" class=" btn btn-success mt-2 form-control text-uppercase fw-bolder">submit</button>
+        </form>
+        <h2 class=" text-light text-uppercase mt-2 fw-bolder text-center">my location below🥰👇</h2>
+        <div class=" map">
+            <center><iframe class=" mt-5 rounded rounded-3" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8776.057104572816!2d104.8537464997095!3d11.530995469359096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310951e4d582ed99%3A0x702fedbbe88db00f!2sK%20Mall!5e0!3m2!1sen!2skh!4v1721315621675!5m2!1sen!2skh" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></center>
+        </div>
+    </div>
+</body>
+<script>
+    let form = document.querySelector("form");
+    let name = document.getElementById("username");
+    let phone = document.getElementById("userphone");
+    let address = document.getElementById("useraddress");
+    let comment = document.getElementById("usercomment");
+    form.addEventListener('submit',(e)=>{
+        e.preventDefault();
+        valiDation();
+
+     });
+
+   // let vaEmail = address =>{
+   //    let RegexEmail = /^[a-zA-Z0-9._][^\s]+@]+\[^\s@]+$/;
+   //    RegexEmail.test(String(Email).toLocaleLowerCase()); 
+   // }
+     function Error(element, message){
+        let formTroll =element.parentElement;
+        let displayError = formTroll.querySelector('.error');
+        let displaySuccess = formTroll.querySelector('.success');
+
+        displayError.innerText = message;
+        displaySuccess.innerText = '';
+        formTroll.classList.add('error');
+        formTroll.classList.remove('success');
+     }
+     function Success(element, message){
+        let formTroll =element.parentElement;
+        let displayError = formTroll.querySelector('.error');
+        let displaySuccess = formTroll.querySelector('.success');
+
+        displayError.innerText = '';
+        displaySuccess.innerText = message;
+        formTroll.classList.add('success');
+        formTroll.classList.remove('error');
+     }
+     function valiDation(){
+        let newUerName = username.value.trim();
+        let newUserPhone = userphone.value.trim();
+        let newUserAddress = useraddress.value.trim();
+        let newUserComment = usercomment.value.trim();
+
+        if (newUerName === ''){
+            Error(username, "please input name 😡")
+        } else{
+            Success(username, "Enter successfully 🥰")
+        }
+        if(newUserPhone === ''){
+            Error(userphone, "Please input phone number 😡")
+        } else{
+            Success(userphone, "enter successfully 🥰")
+        }
+
+     }
+</script>
+</html>

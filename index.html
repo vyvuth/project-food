@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AcZone</title>
+    <link rel="icon" href="/food_icon-removebg-preview.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="menu-item">
+            <header class="navbar navbar-expand-lg text-capitalize shadow-lg">
+                <div class="container-fluid">
+                    <div class="navbar-brand logo">
+                        <h1>aczone</h1>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbar">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-center">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="homeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    home page
+                                </a>
+                                <ul class="dropdown-menu border border-3 border-primary bg-secondary bg-opacity-10">
+                                    <li><a class="dropdown-item text-danger rounded rounded-3" href="#">menu</a></li>
+                                    <li><a class="dropdown-item text-danger rounded rounded-3" href="#">booking</a></li>
+                                    <li><a class="dropdown-item text-danger rounded rounded-3" href="#">website</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="shopDropdown"  data-bs-toggle="dropdown" >
+                                    shop
+                                </a>
+                                <ul class="dropdown-menu border border-3 border-secondary bg-primary bg-opacity-10" >
+                                    <li><a class="dropdown-item text-primary rounded rounded-3" href="#">aoen</a></li>
+                                    <li><a class="dropdown-item text-primary rounded rounded-3" href="#">market</a></li>
+                                    <li><a class="dropdown-item text-primary rounded rounded-3" href="#">soriya mall</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="blogDropdown" data-bs-toggle="dropdown" >
+                                    blog
+                                </a>
+                                <ul class="dropdown-menu border border-3 border-dark bg-warning bg-opacity-10">
+                                    <li><a class="dropdown-item rounded rounded-3" href="#">menu</a></li>
+                                    <li><a class="dropdown-item rounded rounded-3" href="#">booking</a></li>
+                                    <li><a class="dropdown-item rounded rounded-3" href="#">website</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" data-bs-toggle="dropdown">
+                                    pages
+                                </a>
+                                <ul class="dropdown-menu border border-3 border-warning bg-danger bg-opacity-10">
+                                    <li><a class="dropdown-item rounded rounded-3" href="#">cart</a></li>
+                                    <li><a class="dropdown-item rounded rounded-3" href="#">checkout</a></li>
+                                    <li><a class="dropdown-item rounded rounded-3" href="#">testimonial</a></li>
+                                    <li><a class="dropdown-item rounded rounded-3" href="#">404 Pages</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">contact</a>
+                            </li>
+                        </ul>
+                        <div class="icon d-flex">
+                            <button class="btn text-danger me-3 position-relative">
+                                <i class="fa-solid fa-briefcase"></i>
+                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark">99+</span>
+                            </button>
+                            <a href="contact.html"><button class=" cons btn btn-danger mx-2 text-uppercase ">contact us</button></a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+
+        <div class=" poster container-fluid w-100 h-100 bg-danger p-4 rounded rounded-2 mt-5">
+            <div class=" row mt-1">   
+                <div class="text col-lg-6 col-md-6 mt-3">
+                    <h1>hot spicy chicken burger</h1>
+                    <h3>limited prefer/ <span>$5</span></h3>
+                    <button class=" btn btn-warning text-danger fw-900 mt-3 mx-5 text-uppercase">purchase now</button>
+                </div>
+               <div class="box col-lg-6 col-md-6 mt-4">
+                <img width="100%" height="100%" class="rounded rounded-2" src="burger.jpg" alt="burger">
+               </div>
+            </div>
+        </div>
+
+        <div class=" content-food container">
+            <div class=" row">
+                <div class=" col-lg-3 col-md-3">
+                    <div class=" card p-3 mt-5">
+                        <div class=" card-img-top"><img width="100%" height="100%" class=" rounded rounded-2" src="/burger.jpg" alt=""></div>
+                        <button class=" btn-buy btn btn-dark rounded rounded-3 text-uppercase form-control mt-5">
+                            <i class="fa-solid fa-briefcase mx-1"></i>
+                            Add to card</button>
+                        <div class=" d-flex justify-content-center mt-3">
+                            <p id="percent" class=" mx-3">-5%</p>
+                            <p id="price">$20.23</p>
+                            <p id="discount" class=" mx-3">$15.56</p>
+                        </div>
+                        <h4>Lorem ipsum dolor</h4>
+                        <span class=" text-center">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </span>
+                    </div>
+                    
+                </div>
+                <div class=" col-lg-3 col-md-3">
+                    <div class=" card p-3 mt-5">
+                        <div class=" card-img-top"><img width="100%" height="100%" class=" rounded rounded-2" src="/burger.jpg" alt=""></div>
+                        <button class=" btn-buy btn btn-dark rounded rounded-3 text-uppercase form-control mt-5">
+                            <i class="fa-solid fa-briefcase mx-1"></i>
+                            Add to card</button>
+                        <div class=" d-flex justify-content-center mt-3">
+                            <p id="percent" class=" mx-3">-5%</p>
+                            <p id="price">$20.23</p>
+                            <p id="discount" class=" mx-3">$15.56</p>
+                        </div>
+                        <h4>Lorem ipsum dolor</h4>
+                        <span class=" text-center">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </span>
+                    </div>
+                    
+                </div>
+                <div class=" col-lg-3 col-md-3">
+                    <div class=" card p-3 mt-5">
+                        <div class=" card-img-top"><img width="100%" height="100%" class=" rounded rounded-2" src="/burger.jpg" alt=""></div>
+                        <button class=" btn-buy btn btn-dark rounded rounded-3 text-uppercase form-control mt-5">
+                            <i class="fa-solid fa-briefcase mx-1"></i>
+                            Add to card</button>
+                        <div class=" d-flex justify-content-center mt-3">
+                            <p id="percent" class=" mx-3">-5%</p>
+                            <p id="price">$20.23</p>
+                            <p id="discount" class=" mx-3">$15.56</p>
+                        </div>
+                        <h4>Lorem ipsum dolor</h4>
+                        <span class=" text-center">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </span>
+                    </div>
+                    
+                </div>
+                <div class=" col-lg-3 col-md-3">
+                    <div class=" card p-3 mt-5">
+                        <div class=" card-img-top"><img width="100%" height="100%" class=" rounded rounded-2" src="/burger.jpg" alt=""></div>
+                        <button class=" btn-buy btn btn-dark rounded rounded-3 text-uppercase form-control mt-5">
+                            <i class="fa-solid fa-briefcase mx-1"></i>
+                            Add to card</button>
+                        <div class=" d-flex justify-content-center mt-3">
+                            <p id="percent" class=" mx-3">-5%</p>
+                            <p id="price">$20.23</p>
+                            <p id="discount" class=" mx-3">$15.56</p>
+                        </div>
+                        <h4>Lorem ipsum dolor</h4>
+                        <span class=" text-center">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </span>
+                    </div>
+                    
+                </div>
+                <div class=" col-lg-3 col-md-3">
+                    <div class=" card p-3 mt-5">
+                        <div class=" card-img-top"><img width="100%" height="100%" class=" rounded rounded-2" src="/burger.jpg" alt=""></div>
+                        <button class=" btn-buy btn btn-dark rounded rounded-3 text-uppercase form-control mt-5">
+                            <i class="fa-solid fa-briefcase mx-1"></i>
+                            Add to card</button>
+                        <div class=" d-flex justify-content-center mt-3">
+                            <p id="percent" class=" mx-3">-5%</p>
+                            <p id="price">$20.23</p>
+                            <p id="discount" class=" mx-3">$15.56</p>
+                        </div>
+                        <h4>Lorem ipsum dolor</h4>
+                        <span class=" text-center">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </span>
+                    </div>
+                    
+                </div>
+                <div class=" col-lg-3 col-md-3">
+                    <div class=" card p-3 mt-5">
+                        <div class=" card-img-top"><img width="100%" height="100%" class=" rounded rounded-2" src="/burger.jpg" alt=""></div>
+                        <button class=" btn-buy btn btn-dark rounded rounded-3 text-uppercase form-control mt-5">
+                            <i class="fa-solid fa-briefcase mx-1"></i>
+                            Add to card</button>
+                        <div class=" d-flex justify-content-center mt-3">
+                            <p id="percent" class=" mx-3">-5%</p>
+                            <p id="price">$20.23</p>
+                            <p id="discount" class=" mx-3">$15.56</p>
+                        </div>
+                        <h4>Lorem ipsum dolor</h4>
+                        <span class=" text-center">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </span>
+                    </div>
+                    
+                </div>
+                <div class=" col-lg-3 col-md-3">
+                    <div class=" card p-3 mt-5">
+                        <div class=" card-img-top"><img width="100%" height="100%" class=" rounded rounded-2" src="/burger.jpg" alt=""></div>
+                        <button class=" btn-buy btn btn-dark rounded rounded-3 text-uppercase form-control mt-5">
+                            <i class="fa-solid fa-briefcase mx-1"></i>
+                            Add to card</button>
+                        <div class=" d-flex justify-content-center mt-3">
+                            <p id="percent" class=" mx-3">-5%</p>
+                            <p id="price">$20.23</p>
+                            <p id="discount" class=" mx-3">$15.56</p>
+                        </div>
+                        <h4>Lorem ipsum dolor</h4>
+                        <span class=" text-center">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </span>
+                    </div>
+                    
+                </div>
+                <div class=" col-lg-3 col-md-3">
+                    <div class=" card p-3 mt-5">
+                        <div class=" card-img-top"><img width="100%" height="100%" class=" rounded rounded-2" src="/burger.jpg" alt=""></div>
+                        <button class=" btn-buy btn btn-dark rounded rounded-3 text-uppercase form-control mt-5">
+                            <i class="fa-solid fa-briefcase mx-1"></i>
+                            Add to card</button>
+                        <div class=" d-flex justify-content-center mt-3">
+                            <p id="percent" class=" mx-3">-5%</p>
+                            <p id="price">$20.23</p>
+                            <p id="discount" class=" mx-3">$15.56</p>
+                        </div>
+                        <h4>Lorem ipsum dolor</h4>
+                        <span class=" text-center">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </span>
+                    </div>
+                    
+                </div>
+                <div class=" col-lg-3 col-md-3">
+                    <div class=" card p-3 mt-5">
+                        <div class=" card-img-top"><img width="100%" height="100%" class=" rounded rounded-2" src="/burger.jpg" alt=""></div>
+                        <button class=" btn-buy btn btn-dark rounded rounded-3 text-uppercase form-control mt-5">
+                            <i class="fa-solid fa-briefcase mx-1"></i>
+                            Add to card</button>
+                        <div class=" d-flex justify-content-center mt-3">
+                            <p id="percent" class=" mx-3">-5%</p>
+                            <p id="price">$20.23</p>
+                            <p id="discount" class=" mx-3">$15.56</p>
+                        </div>
+                        <h4>Lorem ipsum dolor</h4>
+                        <span class=" text-center">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </span>
+                    </div>
+                    
+                </div>
+                <div class=" col-lg-3 col-md-3">
+                    <div class=" card p-3 mt-5">
+                        <div class=" card-img-top"><img width="100%" height="100%" class=" rounded rounded-2" src="/burger.jpg" alt=""></div>
+                        <button class=" btn-buy btn btn-dark rounded rounded-3 text-uppercase form-control mt-5">
+                            <i class="fa-solid fa-briefcase mx-1"></i>
+                            Add to card</button>
+                        <div class=" d-flex justify-content-center mt-3">
+                            <p id="percent" class=" mx-3">-5%</p>
+                            <p id="price">$20.23</p>
+                            <p id="discount" class=" mx-3">$15.56</p>
+                        </div>
+                        <h4>Lorem ipsum dolor</h4>
+                        <span class=" text-center">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </span>
+                    </div>
+                    
+                </div>
+                <div class=" col-lg-3 col-md-3">
+                    <div class=" card p-3 mt-5">
+                        <div class=" card-img-top"><img width="100%" height="100%" class=" rounded rounded-2" src="/burger.jpg" alt=""></div>
+                        <button class=" btn-buy btn btn-dark rounded rounded-3 text-uppercase form-control mt-5">
+                            <i class="fa-solid fa-briefcase mx-1"></i>
+                            Add to card</button>
+                        <div class=" d-flex justify-content-center mt-3">
+                            <p id="percent" class=" mx-3">-5%</p>
+                            <p id="price">$20.23</p>
+                            <p id="discount" class=" mx-3">$15.56</p>
+                        </div>
+                        <h4>Lorem ipsum dolor</h4>
+                        <span class=" text-center">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </span>
+                    </div>
+                    
+                </div>
+                <div class=" col-lg-3 col-md-3">
+                    <div class=" card p-3 mt-5">
+                        <div class=" card-img-top"><img width="100%" height="100%" class=" rounded rounded-2" src="/burger.jpg" alt=""></div>
+                        <button class=" btn-buy btn btn-dark rounded rounded-3 text-uppercase form-control mt-5">
+                            <i class="fa-solid fa-briefcase mx-1"></i>
+                            Add to card</button>
+                        <div class=" d-flex justify-content-center mt-3">
+                            <p id="percent" class=" mx-3">-5%</p>
+                            <p id="price">$20.23</p>
+                            <p id="discount" class=" mx-3">$15.56</p>
+                        </div>
+                        <h4>Lorem ipsum dolor</h4>
+                        <span class=" text-center">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </span>
+                    </div>
+                    
+                </div>
+                <div class=" col-lg-3 col-md-3">
+                    <div class=" card p-3 mt-5">
+                        <div class=" card-img-top"><img width="100%" height="100%" class=" rounded rounded-2" src="/burger.jpg" alt=""></div>
+                        <button class=" btn-buy btn btn-dark rounded rounded-3 text-uppercase form-control mt-5">
+                            <i class="fa-solid fa-briefcase mx-1"></i>
+                            Add to card</button>
+                        <div class=" d-flex justify-content-center mt-3">
+                            <p id="percent" class=" mx-3">-5%</p>
+                            <p id="price">$20.23</p>
+                            <p id="discount" class=" mx-3">$15.56</p>
+                        </div>
+                        <h4>Lorem ipsum dolor</h4>
+                        <span class=" text-center">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </span>
+                    </div>
+                    
+                </div>
+                <div class=" col-lg-3 col-md-3">
+                    <div class=" card p-3 mt-5">
+                        <div class=" card-img-top"><img width="100%" height="100%" class=" rounded rounded-2" src="/burger.jpg" alt=""></div>
+                        <button class=" btn-buy btn btn-dark rounded rounded-3 text-uppercase form-control mt-5">
+                            <i class="fa-solid fa-briefcase mx-1"></i>
+                            Add to card</button>
+                        <div class=" d-flex justify-content-center mt-3">
+                            <p id="percent" class=" mx-3">-5%</p>
+                            <p id="price">$20.23</p>
+                            <p id="discount" class=" mx-3">$15.56</p>
+                        </div>
+                        <h4>Lorem ipsum dolor</h4>
+                        <span class=" text-center">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </span>
+                    </div>
+                    
+                </div>
+                <div class=" col-lg-3 col-md-3">
+                    <div class=" card p-3 mt-5">
+                        <div class=" card-img-top"><img width="100%" height="100%" class=" rounded rounded-2" src="/burger.jpg" alt=""></div>
+                        <button class=" btn-buy btn btn-dark rounded rounded-3 text-uppercase form-control mt-5">
+                            <i class="fa-solid fa-briefcase mx-1"></i>
+                            Add to card</button>
+                        <div class=" d-flex justify-content-center mt-3">
+                            <p id="percent" class=" mx-3">-5%</p>
+                            <p id="price">$20.23</p>
+                            <p id="discount" class=" mx-3">$15.56</p>
+                        </div>
+                        <h4>Lorem ipsum dolor</h4>
+                        <span class=" text-center">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </span>
+                    </div>
+                    
+                </div>
+                <div class=" col-lg-3 col-md-3">
+                    <div class=" card p-3 mt-5">
+                        <div class=" card-img-top"><img width="100%" height="100%" class=" rounded rounded-2" src="/burger.jpg" alt=""></div>
+                        <button class=" btn-buy btn btn-dark rounded rounded-3 text-uppercase form-control mt-5">
+                            <i class="fa-solid fa-briefcase mx-1"></i>
+                            Add to card</button>
+                        <div class=" d-flex justify-content-center mt-3">
+                            <p id="percent" class=" mx-3">-5%</p>
+                            <p id="price">$20.23</p>
+                            <p id="discount" class=" mx-3">$15.56</p>
+                        </div>
+                        <h4>Lorem ipsum dolor</h4>
+                        <span class=" text-center">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </span>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
